@@ -1,0 +1,25 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.6.33723.286
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "PowerPlantAPITask", "PowerPlantAPITask\PowerPlantAPITask.csproj", "{889DECA3-7E28-408C-9A88-E4318E3F729D}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{889DECA3-7E28-408C-9A88-E4318E3F729D}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{889DECA3-7E28-408C-9A88-E4318E3F729D}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{889DECA3-7E28-408C-9A88-E4318E3F729D}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{889DECA3-7E28-408C-9A88-E4318E3F729D}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {38AC22BD-D3C7-4C9D-9D1D-C3D92E739826}
+	EndGlobalSection
+EndGlobal
