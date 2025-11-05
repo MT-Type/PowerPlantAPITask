@@ -8,7 +8,7 @@ namespace PowerPlantAPITask.Models
         public int Id { get; set; }
 
         [Required]
-        [RegularExpression(@"^[A-Za-zÀ-ž]+\s[A-Za-zÀ-ž]+$", ErrorMessage = "Given \"owner\" value must consist of two words (text-only characters) separated by a whitespace")]
+        [RegularExpression(@"^[A-Za-zÀ-ž]+\s[A-Za-zÀ-ž]+$", ErrorMessage = "Given 'owner' value must consist of two words (text-only characters) separated by a whitespace")]
         public string Owner { get; set; }
 
         [Required]

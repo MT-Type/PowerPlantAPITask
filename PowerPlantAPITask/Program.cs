@@ -5,7 +5,7 @@ var builder = WebApplication.CreateBuilder(args);
 
 builder.Services.AddControllers();
 builder.Services.AddDbContext<PowerPlantDbContext>(options =>
-    options.UseSqlite("Data Srouce=powerplants.db"));
+    options.UseSqlite("Data Source=powerplants.db"));
 builder.Services.AddEndpointsApiExplorer();
 builder.Services.AddSwaggerGen();
 
