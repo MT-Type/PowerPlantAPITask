@@ -21,24 +21,27 @@ namespace PowerPlantAPITask.Controllers
         [HttpGet]
         public async Task<IActionResult> GetPowerPlants([FromQuery] string? owner, [FromQuery] int page = 1, [FromQuery] int pageSize = 10)
         {
-            var query = _context.PowerPlants.AsQueryable();
+            var plants = await _context.PowerPlants.ToListAsync();
 
             if (!string.IsNullOrEmpty(owner))
             {
-                owner = owner.ToLowerInvariant();
-                query = query.Where(p => p.Owner.ToLower().Contains(owner));
+                owner = NormalizeString(owner.ToLowerInvariant());
+
+                plants = plants
+                    .Where(p => NormalizeString(p.Owner.ToLowerInvariant()).Contains(owner))
+                    .ToList();
             }
 
-            var totalCount = await query.CountAsync();
-            var items = await query
+            var totalCount = plants.Count();
+            var items = plants
                 .Skip((page - 1) * pageSize)
                 .Take(pageSize)
-                .ToListAsync();
+                .ToList();
 
             return Ok(new
             {
                 total = totalCount,
-                totalPages = Math.Ceiling((decimal) totalCount / pageSize),
+                totalPages = Math.Ceiling((decimal)totalCount / pageSize),
                 page,
                 pageSize,
                 powerPlants = items

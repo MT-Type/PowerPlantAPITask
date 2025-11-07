@@ -5,6 +5,8 @@ VisualStudioVersion = 17.6.33723.286
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "PowerPlantAPITask", "PowerPlantAPITask\PowerPlantAPITask.csproj", "{889DECA3-7E28-408C-9A88-E4318E3F729D}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "PowerPlantAPITask.Tests", "PowerPlantAPITask.Tests\PowerPlantAPITask.Tests.csproj", "{FD4D73B2-9B58-4A09-8078-687284BFC506}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -15,6 +17,10 @@ Global
 		{889DECA3-7E28-408C-9A88-E4318E3F729D}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{889DECA3-7E28-408C-9A88-E4318E3F729D}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{889DECA3-7E28-408C-9A88-E4318E3F729D}.Release|Any CPU.Build.0 = Release|Any CPU
+		{FD4D73B2-9B58-4A09-8078-687284BFC506}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{FD4D73B2-9B58-4A09-8078-687284BFC506}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{FD4D73B2-9B58-4A09-8078-687284BFC506}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{FD4D73B2-9B58-4A09-8078-687284BFC506}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
